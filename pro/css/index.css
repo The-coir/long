@@ -1,0 +1,119 @@
+body{background: #fff}
+.my_header,.my_footer{width:100%;}
+/*����Ļ��iframe�ĸ�*/
+@media (min-width: 992px) {
+    .my_header{height:5.5rem;}
+    .my_footer{height:22rem;}
+}
+/*��С��Ļ��iframe�ĸ�*/
+@media (max-width: 991px) and (min-width: 576px) {
+    .my_header{height:15rem;}
+    .my_footer{height:38rem;}
+}
+/*�ֲ�ͼ��ͷ��ʽ*/
+
+.carousel-control-prev
+.carousel-control-next{
+    width:4%;height:20%;top:40%;
+    background-color:rgba(0,0,0,.3);
+    border-radius:4px ;
+}
+/*�ֲ�ͼָʾ��*/
+.carousel-indicators li{
+    width:0.8rem;height: 0.8rem;
+    background: #fff;
+    border-radius: 50%;
+    margin-right:6px ;
+    margin-left:6px ;
+}
+.carousel-indicators li.active{
+    background: #0aa1ed;
+}
+/*1¥*/
+.floor>div{
+    /*��ȡ��������Ŀ�Ĺ�������*/
+    background:#e8e8e8;
+    margin-bottom:10px;
+}
+.floor>div:first-child{
+    width:609px;height:377px;
+
+}
+.floor>div:nth-child(2){
+    width:381px;height:377px;
+}
+.floor>div:nth-child(3){
+    width:377px;height:235px;
+}
+.floor>div:nth-child(4){
+    width:198px;height:235px;
+}
+.floor>div:nth-child(5){
+    width:198px;height:235px;
+}
+.floor>div:last-child{
+    width:198px;height:235px;
+}
+.desc{
+    width:245px;height:243px;
+    position:absolute;
+    top:45px;left:50px;
+}
+desc{
+    position:absolute;
+    top:56px;right:40px;
+}
+ul {
+    display: block;
+    overflow: hidden;
+    white-space:nowrap ;
+    margin: 20px;
+    padding-right:25px ;
+    padding-left:25px ;
+    list-style: none;
+    text-align: left;
+}
+#index1l{
+    height: 25px;
+    background: #fff
+}
+#index1l ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right:15px ;
+    margin: 0;
+}
+#index1l ul li a {
+    margin: 0 auto;
+    color:#000;
+    text-decoration: none;
+    font-size:20px;
+}
+#index1l ul li a:hover {
+    color:#fd113a;
+    text-decoration: none;
+    font-family: 华文琥珀;
+}
+h3{
+    padding-left: 15px;
+    text-align: left;
+}
+#yilou{
+    display: flex;
+    justify-content: flex-start;
+
+}
+#yilou>div{
+        padding-top: 17px;
+        width: 144px;
+        height: auto;
+        padding-right: 16px;
+        float: left;
+}
+#yilou>div>img{
+    width: 100%;
+    height: 100%;
+    background: none;
+    transition: -webkit-transform .4s ease;
+
+}

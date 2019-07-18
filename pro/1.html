@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+</head>
+
+<body>
+    <div class="Exhibition">　　　　　　　　　　　　　　　　　　　　//放置的容器
+        <div class="content">　　　　　　　　　　　　　　　　　　　　 //旋转的目标
+            <img class="img1" src="world.jpg" />
+            <img class="img2" src="world.jpg" />
+            <img class="img3" src="world.jpg" />
+            <img class="img4" src="world.jpg" />
+        </div>
+    </div>
+
+</body>
+<script>
+
+        .Exhibition{
+      perspective: 500px;                                    //让容器有个“坑”可以展示物品
+      transform: rotateX(0deg);                              //这里可以展示看的位置！（可以没有）  
+  }
+        .content{
+      margin - left: 600px;
+      margin - top: 200px;
+      width: 200px;
+      height: 200px;
+      transform - style: preserve - 3d;                          //让里面的元素3d展示
+      -webkit - animation: ab 10s infinite linear;　　　　　　　//动画/线性无限循环
+      -moz - animation: ab 10s infinite linear;
+      animation: ab 10s infinite linear;
+      position: relative;
+  }
+
+  img{
+      position: absolute;
+      height: 200px;
+  }
+        .img1{
+      -webkit - transform: rotateY(0deg) translateZ(150px);                 //倾斜0deg，并向图片的前方拉近150px
+      -moz - transform: rotateY(0deg) translateZ(150px);
+      -ms - transform: rotateY(0deg) translateZ(150px);
+      transform: rotateY(0deg) translateZ(150px);
+  }
+        .img2{
+      -webkit - transform: rotateY(90deg) translateZ(150px);　　　　　　　　　　//倾斜90deg，并向图片前拉近150px
+      -moz - transform: rotateY(90deg) translateZ(150px);
+      -ms - transform: rotateY(90deg) translateZ(150px);
+      transform: rotateY(90deg) translateZ(150px);
+  }
+        .img3{
+      -webkit - transform: rotateY(180deg) translateZ(150px);
+      -moz - transform: rotateY(180deg) translateZ(150px);
+      -ms - transform: rotateY(180deg) translateZ(150px);
+      transform: rotateY(180deg) translateZ(150px);
+  }
+        .img4{
+      -webkit - transform: rotateY(270deg) translateZ(150px);
+      -moz - transform: rotateY(270deg) translateZ(150px);
+      -ms - transform: rotateY(270deg) translateZ(150px);
+      transform: rotateY(270deg) translateZ(150px);
+  }
+  @keyframes demo{
+      from{ transform: rotateY(0deg) }
+      to{ transform: rotateY(360deg) }
+  } 
+</script>
+</html>
